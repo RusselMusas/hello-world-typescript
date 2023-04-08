@@ -1,7 +1,12 @@
 // Define class
 class Point {
-    x!: number;
-    y!: number;
+    x?: number;
+    y?: number;
+
+    constructor(x?: number, y?: number) {
+        this.x = x;
+        this.y = y;
+    }
 
     draw() {
         // ...
@@ -15,12 +20,8 @@ class Point {
 }
 
 // Invocation
-let point1 = new Point();
-point1.x = 5;
-point1.y = 6;
+let point1 = new Point(7, 3);
 point1.draw();
 
-let point2 = new Point();
-point2.x = 4;
-point2.y = 3;
+let point2 = new Point(4, 6);
 point2.getDistance(point1);
