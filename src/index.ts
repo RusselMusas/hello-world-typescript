@@ -3,12 +3,12 @@ class Point {
 
     constructor(private x?: number, private y?: number) {}
 
-    getX() {
+    get X(): number | undefined {
         return this.x;
     }
 
-    setX(value: number) {
-        if(value < 0)
+    set X(value: number | undefined) {
+        if(typeof(value) == 'undefined' || (typeof(value) == 'number' && value < 0))
             throw new Error('x value cannot be less than 0.');
         
         this.x = value;
@@ -27,8 +27,8 @@ class Point {
 
 // Invocation
 let point1 = new Point(7, 3);
-console.log(point1.getX());
-point1.setX(9);
+console.log(point1.X);
+point1.X = 9;
 point1.draw();
 
 let point2 = new Point(4, 6);
