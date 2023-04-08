@@ -1,52 +1,26 @@
-console.log("Hello world");
-let age: number = 20;
+// Define class
+class Point {
+    x!: number;
+    y!: number;
 
-if(age < 50)
-    age +=20
+    draw() {
+        // ...
+        console.log('X: ' + this.x + ', Y: ' + this.y);
+    }
 
-console.log("Age is: " + age);
-
-function renderX(coordonnees: any) {
-    console.log(coordonnees);
+    getDistance(another: Point) {
+        // ...
+        console.info(another);
+    }
 }
 
-// Tuples
-let user: [number, string] = [2, "Russel"];
-console.log(user);
+// Invocation
+let point1 = new Point();
+point1.x = 5;
+point1.y = 6;
+point1.draw();
 
-enum Size { Small = 1, Medium, Large };
-let mySize: Size = Size.Medium;
-console.log(mySize);
-
-let message;
-message = "abc";
-let endsWith = message;
-
-// Arrow function
-let doLog = (myParam: string) => console.log(myParam);
-
-
-let drawPoint = (point: { x: number, y: number}) => {
-    // ...
-    console.log(point);
-}
-
-drawPoint({
-    x: 2, 
-    y: 5
-})
-
-interface Point {
-    x: number, 
-    y: number
-}
-
-let drawPoint2 = (point: Point) => {
-    // ...
-    console.log(point);
-}
-
-drawPoint2 ({
-    x: 2,
-    y: 5
-})
+let point2 = new Point();
+point2.x = 4;
+point2.y = 3;
+point2.getDistance(point1);

@@ -1,21 +1,18 @@
 "use strict";
-console.log("Hello world");
-let age = 20;
-if (age < 50)
-    age += 20;
-console.log("Age is: " + age);
-function renderX(coordonnees) {
-    console.log(coordonnees);
+class Point {
+    draw() {
+        console.log('X: ' + this.x + ', Y: ' + this.y);
+    }
+    getDistance(another) {
+        console.info(another);
+    }
 }
-let user = [2, "Russel"];
-console.log(user);
-var Size;
-(function (Size) {
-    Size[Size["Small"] = 1] = "Small";
-    Size[Size["Medium"] = 2] = "Medium";
-    Size[Size["Large"] = 3] = "Large";
-})(Size || (Size = {}));
-;
-let mySize = Size.Medium;
-console.log(mySize);
+let point1 = new Point();
+point1.x = 5;
+point1.y = 6;
+point1.draw();
+let point2 = new Point();
+point2.x = 4;
+point2.y = 3;
+point2.getDistance(point1);
 //# sourceMappingURL=index.js.map
