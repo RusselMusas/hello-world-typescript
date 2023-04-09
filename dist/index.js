@@ -10,6 +10,8 @@ let point2 = new point_1.Point(4, 6);
 point2.getDistance(point1);
 let sales = 123456789;
 console.log(sales);
-let numbers = [1, 2, '3'];
+let numbers = [1, 2, 3];
 console.log(numbers);
+let user = [1, "Russel"];
+console.log(user);
 //# sourceMappingURL=index.js.map

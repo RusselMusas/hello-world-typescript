@@ -14,6 +14,10 @@ point2.getDistance(point1);
 let sales = 123_456_789;
 console.log(sales);
 
+// Arrays
 let numbers: number[] = [1, 2, 3];
 console.log(numbers);
 
+// Tuples
+let user: [number, string] = [1, "Russel"];
+console.log(user);
