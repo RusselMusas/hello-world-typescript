@@ -6,15 +6,8 @@ console.log(point1.x);
 point1.x = 9;
 point1.y = 5;
 point1.draw();
-let texBox = {
-    drag: () => {
-        console.log("Drag me");
-    },
-    resize: () => {
-        console.log("Resize me");
-    }
-};
-console.log(texBox);
-let quantity = 50;
-console.log("Quantity" + quantity);
+let quantity = 75;
+console.log("Quantity: " + quantity);
+let mycolor = 'red';
+console.log("mycolor: " + mycolor);
 //# sourceMappingURL=index.js.map

@@ -8,25 +8,13 @@ point1.y = 5;
 point1.draw();
 
 // Type Alias
-// Intersection
-type Draggable = {
-    drag: () => void
-};
+// Litteral Type
+type Quantity = 50 | 75 | 100;
+let quantity: Quantity = 75;
+console.log("Quantity: " + quantity);
 
-type Resizable = {
-    resize: () => void
-};
-
-type UiWidget = Draggable & Resizable;
-
-let texBox: UiWidget = {
-    drag: () => {
-        console.log("Drag me");
-    },
-    resize: () => {
-        console.log("Resize me");
-    }
-}
-console.log(texBox);
-
+// Litteral Type
+type Color = 'red' | 'blue' | 'white';
+let mycolor: Color = 'red';
+console.log("mycolor: " + mycolor);
 
