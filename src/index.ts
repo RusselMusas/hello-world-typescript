@@ -9,7 +9,7 @@ point1.draw();
 
 // Objects
 let employee: { 
-    id: number, 
+    readonly id: number, 
     name: string, 
     age: number,
     retire: (date: Date) => void 
@@ -21,4 +21,6 @@ let employee: {
         console.log(date);
     }
  };
+ // employee.id = 2; // id is readonly, cannot be changed later
+
 console.log(employee);
