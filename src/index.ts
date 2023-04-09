@@ -7,13 +7,16 @@ point1.x = 9;
 point1.y = 5;
 point1.draw();
 
-// Objects
-let employee: { 
+// Type Alias
+type Employee = {
     readonly id: number, 
     name: string, 
     age: number,
     retire: (date: Date) => void 
-} = { 
+}
+
+// Objects
+let employee: Employee = { 
     id: 2, 
     name: "Russel", 
     age: 20,
