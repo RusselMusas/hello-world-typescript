@@ -14,4 +14,7 @@ let numbers = [1, 2, 3];
 console.log(numbers);
 let user = [1, "Russel"];
 console.log(user);
+;
+let mysize = 2;
+console.log(mysize);
 //# sourceMappingURL=index.js.map
