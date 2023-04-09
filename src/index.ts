@@ -8,5 +8,6 @@ point1.y = 5;
 point1.draw();
 
 // Objects
-let employee: { id: number, name: string, age: number } = { id: 2, name: "Russel", age: 20 };
+let employee: { id: number, name: string, age?: number } = { id: 2, name: "Russel" };
+employee.age = 20;  // optional property can be set later or be ignored
 console.log(employee);
