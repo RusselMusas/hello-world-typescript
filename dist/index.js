@@ -6,11 +6,6 @@ console.log(point1.x);
 point1.x = 9;
 point1.y = 5;
 point1.draw();
-function calculateTax(income) {
-    if (income < 50000)
-        return income * 1.2;
-    return income * 1.3;
-}
-let taxValue = calculateTax(52000);
-console.log(taxValue);
+let employee = { id: 2, name: "Russel", age: 20 };
+console.log(employee);
 //# sourceMappingURL=index.js.map

@@ -7,12 +7,6 @@ point1.x = 9;
 point1.y = 5;
 point1.draw();
 
-// function
-function calculateTax(income: number, taxYear = 2022): number {
-    if(taxYear == 2022 && income < 50_000)
-        return income * 1.2;
-    return income * 1.3;
-}
-
-let taxValue = calculateTax(52000);
-console.log(taxValue);
+// Objects
+let employee: { id: number, name: string, age: number } = { id: 2, name: "Russel", age: 20 };
+console.log(employee);
