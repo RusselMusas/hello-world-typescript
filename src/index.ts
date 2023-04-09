@@ -7,14 +7,12 @@ point1.x = 9;
 point1.y = 5;
 point1.draw();
 
-// Null
+// Nullish coalescing operator
+let speed: number | null = null;
 
-function greet(name: string | null | undefined) {
-    if(name)
-        console.log(`Hi ${name.toUpperCase()} !`);
-    else
-        console.log("Hola!");
+let ride = {
+    // Falsy values in js (undefined, false, '', 0, null)
+    // Nullish coalescing operator: ?? (only takes null or undefined)
+    speed: speed ?? 30
 }
-// Call function
-greet("Russel");
-
+console.log(ride);

@@ -6,11 +6,9 @@ console.log(point1.x);
 point1.x = 9;
 point1.y = 5;
 point1.draw();
-function greet(name) {
-    if (name)
-        console.log(`Hi ${name.toUpperCase()} !`);
-    else
-        console.log("Hola!");
-}
-greet("Russel");
+let speed = null;
+let ride = {
+    speed: speed !== null && speed !== void 0 ? speed : 30
+};
+console.log(ride);
 //# sourceMappingURL=index.js.map
