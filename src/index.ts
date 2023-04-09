@@ -7,14 +7,14 @@ point1.x = 9;
 point1.y = 5;
 point1.draw();
 
-// Type Alias
-// Litteral Type
-type Quantity = 50 | 75 | 100;
-let quantity: Quantity = 75;
-console.log("Quantity: " + quantity);
+// Null
 
-// Litteral Type
-type Color = 'red' | 'blue' | 'white';
-let mycolor: Color = 'red';
-console.log("mycolor: " + mycolor);
+function greet(name: string | null | undefined) {
+    if(name)
+        console.log(`Hi ${name.toUpperCase()} !`);
+    else
+        console.log("Hola!");
+}
+// Call function
+greet("Russel");
 

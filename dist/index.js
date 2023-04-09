@@ -6,8 +6,11 @@ console.log(point1.x);
 point1.x = 9;
 point1.y = 5;
 point1.draw();
-let quantity = 75;
-console.log("Quantity: " + quantity);
-let mycolor = 'red';
-console.log("mycolor: " + mycolor);
+function greet(name) {
+    if (name)
+        console.log(`Hi ${name.toUpperCase()} !`);
+    else
+        console.log("Hola!");
+}
+greet("Russel");
 //# sourceMappingURL=index.js.map
