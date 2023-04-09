@@ -7,22 +7,12 @@ point1.x = 9;
 point1.y = 5;
 point1.draw();
 
-let point2 = new Point(4, 6);
-point2.getDistance(point1);
+// function
+function calculateTax(income: number, taxYear = 2022): number {
+    if(taxYear == 2022 && income < 50_000)
+        return income * 1.2;
+    return income * 1.3;
+}
 
-// Built-in Types
-let sales = 123_456_789;
-console.log(sales);
-
-// Arrays
-let numbers: number[] = [1, 2, 3];
-console.log(numbers);
-
-// Tuples
-let user: [number, string] = [1, "Russel"];
-console.log(user);
-
-// Enums
-const enum Size { Small = 1, Medium, Large };
-let mysize: Size = Size.Medium;
-console.log(mysize);
+let taxValue = calculateTax(52000);
+console.log(taxValue);
