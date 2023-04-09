@@ -15,6 +15,8 @@ type Employee = {
     retire: (date: Date) => void 
 }
 
+type Color = 'red' | 'white' | 'blue';
+
 // Objects
 let employee: Employee = { 
     id: 2, 
@@ -24,6 +26,23 @@ let employee: Employee = {
         console.log(date);
     }
  };
- // employee.id = 2; // id is readonly, cannot be changed later
 
 console.log(employee);
+
+// using color type
+let mycolor: Color = 'blue';
+console.log(mycolor);
+
+function kgToMiles(value: number | string) {
+    if(typeof value === 'number') {
+        console.log(typeof value);
+        return value * 2.2;
+    } else {
+        console.log(typeof value);
+        return parseInt(value) * 2.2
+    }
+}
+let responseConverted1 = kgToMiles(26);
+console.log(responseConverted1);
+let responseConverted2 = kgToMiles('26');
+console.log(responseConverted2);

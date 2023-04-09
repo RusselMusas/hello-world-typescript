@@ -15,4 +15,20 @@ let employee = {
     }
 };
 console.log(employee);
+let mycolor = 'blue';
+console.log(mycolor);
+function kgToMiles(value) {
+    if (typeof value === 'number') {
+        console.log(typeof value);
+        return value * 2.2;
+    }
+    else {
+        console.log(typeof value);
+        return parseInt(value) * 2.2;
+    }
+}
+let responseConverted1 = kgToMiles(26);
+console.log(responseConverted1);
+let responseConverted2 = kgToMiles('26');
+console.log(responseConverted2);
 //# sourceMappingURL=index.js.map
