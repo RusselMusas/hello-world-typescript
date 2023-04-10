@@ -8,7 +8,15 @@ class Account {
     deposit(amount) {
         if (amount <= 0)
             throw new Error('Invalid amount');
-        this.balance = amount;
+        this.balance += amount;
     }
 }
+let account = new Account(1, "Russel", 0);
+console.log(account);
+account.deposit(100);
+console.log(account);
+account.deposit(150);
+console.log(account);
+console.log(typeof account);
+console.log(account instanceof Account);
 //# sourceMappingURL=index.js.map

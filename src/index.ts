@@ -12,7 +12,17 @@ class Account {
     deposit(amount: number): void {
         if(amount <= 0)
             throw new Error('Invalid amount');
-        this.balance = amount;
+        this.balance += amount;
     }
-    
+
 }
+
+// Use class to create objects
+let account = new Account(1, "Russel", 0);
+console.log(account);
+account.deposit(100);
+console.log(account);
+account.deposit(150);
+console.log(account);
+console.log(typeof account);
+console.log(account instanceof Account);
