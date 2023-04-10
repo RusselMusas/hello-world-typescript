@@ -10,6 +10,9 @@ class Account {
             throw new Error('Invalid amount');
         this.balance += amount;
     }
+    getBalance() {
+        return this.balance;
+    }
 }
 let account = new Account(1, "Russel", 0);
 console.log(account);
