@@ -14,7 +14,7 @@ class Account {
         return this._balance;
     }
     set balance(balance) {
-        if (balance <= 0)
+        if (balance < 0)
             throw new Error('Invalid balance');
         this._balance = balance;
     }
@@ -31,4 +31,12 @@ account.balance = 300;
 console.log("Balance: " + account.balance);
 console.log(typeof account);
 console.log(account instanceof Account);
+console.log("==========================");
+class SeatAssignment {
+}
+let seat = new SeatAssignment();
+seat.S1 = 'Russel';
+seat.S2 = 'Micha';
+seat['S3'] = "Prunelle";
+console.log(seat);
 //# sourceMappingURL=index.js.map

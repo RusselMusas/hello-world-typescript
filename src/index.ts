@@ -17,7 +17,7 @@ class Account {
 
     // Setter
     set balance(balance: number) {
-        if(balance <= 0)
+        if(balance < 0)
             throw new Error('Invalid balance');
         this._balance = balance;
     }
@@ -37,3 +37,16 @@ account.balance = 300;
 console.log("Balance: " + account.balance);
 console.log(typeof account);
 console.log(account instanceof Account);
+
+console.log("==========================");
+
+// Index Signature: Create properties Dynamically
+class SeatAssignment {
+    [SeatNumner: string]: string;
+}
+
+let seat = new SeatAssignment();
+seat.S1 = 'Russel';
+seat.S2 = 'Micha';
+seat['S3'] = "Prunelle";
+console.log(seat);
